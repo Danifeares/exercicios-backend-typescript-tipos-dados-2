@@ -42,9 +42,23 @@ const cadastrarUsuario = (dados: Usuario): Usuario => {
   return dados
 }
 
-const listarUsuarios = (): Usuario[] => {
-  return lerArquivo() as Usuario[]
+const listarUsuarios = (profissao?: string): Usuario[] => { // posso passar o filtro de profissão ou não, é opcional
+  const bd = lerArquivo() as Usuario[]
+  if (profissao) {
+    const usuarios = bd.filter(usuario => {
+      return usuario.profissao === profissao
+    })
+  
+    if (usuarios.length === 0) {
+      throw new Error('Profissão não encontrada')
+    }
+  
+    return usuarios
+  }
+  return bd
 }
+
+//console.log(listarUsuarios('profissão teste 1'))
 
 // const usuarioTeste = cadastrarUsuario({
 //   nome: 'Usuario Teste',
@@ -130,4 +144,6 @@ const excluirUsuario = (cpf: string): Usuario => {
   return usuario // retorna o objeto que foi excluido, mas no banco ele já não existe mais
 }
 
-console.log(excluirUsuario('00000000001'))
+//console.log(excluirUsuario('00000000001'))
+
+

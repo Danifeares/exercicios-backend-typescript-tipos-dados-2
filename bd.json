@@ -11,5 +11,31 @@
       "bairro": "centro",
       "cidade": "Porto Alegre"
     }
+  },
+  {
+    "nome": "Usuario Teste 2",
+    "email": "teste@teste.com",
+    "cpf": "00000000001",
+    "profissao": "profissão teste 2",
+    "endereco": {
+      "cep": "12345-679",
+      "rua": "rua a",
+      "complemento": "casa azul",
+      "bairro": "centro",
+      "cidade": "Porto Alegre"
+    }
+  },
+  {
+    "nome": "Usuario Teste 3",
+    "email": "teste@teste.com",
+    "cpf": "00000000002",
+    "profissao": "profissão teste 1",
+    "endereco": {
+      "cep": "12345-679",
+      "rua": "rua a",
+      "complemento": "casa azul",
+      "bairro": "centro",
+      "cidade": "Porto Alegre"
+    }
   }
 ]
