@@ -1,1 +1,21 @@
-["Teste","typescript","João"]
+[
+  {
+    "nome": "Usuario Teste",
+    "email": "teste@teste.com",
+    "cpf": "00000000000",
+    "profissao": "profissão teste 1",
+    "endereco": {
+      "cep": "12345-678",
+      "rua": "rua a",
+      "complemento": "casa azul",
+      "bairro": "centro",
+      "cidade": "Porto Alegre"
+    }
+  },
+  {
+    "nome": "Usuario Teste 2",
+    "email": "teste@teste.com",
+    "cpf": "00000000001",
+    "endereco": null
+  }
+]
