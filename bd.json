@@ -11,11 +11,5 @@
       "bairro": "centro",
       "cidade": "Porto Alegre"
     }
-  },
-  {
-    "nome": "Usuario Teste 2",
-    "email": "teste@teste.com",
-    "cpf": "00000000001",
-    "endereco": null
   }
 ]
